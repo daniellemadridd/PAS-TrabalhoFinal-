@@ -1,10 +1,8 @@
 package br.pucrs.daniellegabriella.demo.domain.entities;
 
-import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 
 @Entity
-@DiscriminatorValue("PIX")
 public class Pix extends FormaDePagamento {
 
 	private String chave;

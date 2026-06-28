@@ -2,20 +2,13 @@ package br.pucrs.daniellegabriella.demo.domain.entities;
 
 import java.util.Date;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 
 @Entity
-@DiscriminatorValue("CARTAO")
 public class CartaoDeCredito extends FormaDePagamento {
 
-	@Column(nullable = false)
 	private String numero;
 
-	@Temporal(TemporalType.DATE)
 	private Date validade;
 
 	public CartaoDeCredito() {

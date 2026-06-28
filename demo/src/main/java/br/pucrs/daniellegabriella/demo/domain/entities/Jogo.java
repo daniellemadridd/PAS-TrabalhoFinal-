@@ -29,7 +29,7 @@ public class Jogo {
 
     private SituacaoJogo situacao = SituacaoJogo.DISPONIVEL;
 
-    @jakarta.persistence.OneToMany(mappedBy = "jogo")
+    @OneToMany(mappedBy = "jogo")
     private List<Contrato> contratos = new ArrayList<>();
 
     public Jogo() {
